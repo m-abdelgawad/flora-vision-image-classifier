@@ -28,6 +28,7 @@
     <li><a href="#main-features">Main Features</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#udacity-certificate">Udacity Certificate</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol> 
 </details>
@@ -38,9 +39,10 @@
 
 <img src="readme_files/cover.png" alt="Cover Image">
 
-* **Project Name:** Flora Vision Image Classifier
-* **Version:** v1.0.0
-* **Purpose:** To classify images of flowers into their respective categories using a deep learning model.
+- **Project Name:** Flora Vision Image Classifier
+- **Version:** v1.0.0
+- **Purpose:** To classify images of flowers into their respective categories using a deep learning model.
+- **HTML Notebook Preview:** The project contains an HTML version of the notebook for quick access, available at `docs/Image Classifier Project.html` inside the repository.
 
 ### Description
 
@@ -103,6 +105,17 @@ The application is configurable via a `config.yaml` file, which simplifies hyper
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Udacity Certificate
+
+This project was the graduation project for the Udacity Nanodegree **AI Programming with Python**.  
+Below is the certificate for the program:
+
+<img src="readme_files/ai_programming_with_python_certificate.jpg" alt="Udacity Certificate">
+
+The certificate can be verified using the following [verification link](https://www.udacity.com/certificate/e/ea925be2-fb92-11eb-bc2d-3f0a8c114be8).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTACT -->
 
 ## Contact
@@ -118,5 +131,4 @@ GitHub Profile Link: [https://github.com/m-abdelgawad](https://github.com/m-abde
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
 [linkedin-url]: https://www.linkedin.com/in/m-abdelgawad/
