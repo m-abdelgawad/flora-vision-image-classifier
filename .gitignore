@@ -1,5 +1,3 @@
-checkpoints/
-
 # Byte-compiled / optimized / DLL file
 __pycache__/
 *.py[cod]
