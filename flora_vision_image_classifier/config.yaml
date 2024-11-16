@@ -1,0 +1,22 @@
+base_dir: '.'
+
+data:
+  train_dir: 'data\flowers\train'
+  valid_dir: 'data\flowers\valid'
+  test_dir: 'data\flowers\test'
+  category_mapping: 'data\input\cat_to_name.json'
+  batch_size: 64
+
+model:
+  hidden_units: 4096
+  output_units: 102
+  dropout_rate: 0.3
+
+training:
+  epochs: 2
+  print_every: 50
+  learning_rate: 0.001
+
+checkpoint:
+  output_dir: 'data\output'
+  file_name_pattern: 'flora-vision-image-classifier-{testing_accuracy}-checkpoint.pth'
