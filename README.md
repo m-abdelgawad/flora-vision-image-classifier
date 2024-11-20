@@ -25,7 +25,6 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#main-features">Main Features</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#udacity-certificate">Udacity Certificate</a></li>
@@ -46,27 +45,25 @@
 
 ### Description
 
-Flora Vision Image Classifier is a deep learning-based project designed to identify and classify images of flowers.
-Initially, the project was developed as a Jupyter Notebook for experimentation and analysis. Later, it was refactored
-into a modularized command-line application for practical usage and easier deployment. Users can now train models,
-validate performance, and make predictions directly from the command line by running the `train.py` and `predict.py`
-scripts.
+The **Flora Vision Image Classifier** is a robust AI-powered solution designed for accurately classifying images of flowers into their respective categories. With potential applications in mobile apps or plant identification tools, this classifier leverages transfer learning and deep learning techniques to achieve high accuracy on unseen datasets.
 
-The application is configurable via a `config.yaml` file, which simplifies hyperparameter tuning and dataset management.
+#### Key Business Features
+- **Efficient Flower Identification**: Ideal for botanical research, gardening enthusiasts, and smartphone-based apps.
+- **Real-World Performance**: Achieved a nearly 91% accuracy on a test dataset comprising 102 flower species.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+#### Technical Highlights
+- **Pre-Trained Model Utilization**: Built using the VGG16 architecture fine-tuned for flower classification.
+- **Deep Learning Framework**: Implemented with PyTorch for training and prediction.
+- **Pipeline Automation**: Configurable hyperparameters (learning rate, batch size, epochs) via a YAML file for easy deployment.
+- **CLI Tool**: Transformed into a command-line application for training, validation, testing, and real-time predictions.
+- **Visualization**: Offers detailed graphs for training and validation losses, and accuracy per epoch.
 
-## Main Features
+#### Potential Use Cases
+- Mobile apps for identifying flowers by photographing them.
+- Educational tools for learning about plant species.
+- Automated systems for botanical research.
 
-- **Notebook to CLI Transformation:** Developed initially in a Jupyter Notebook and transformed into a fully modular
-  command-line application.
-- **Training Module:** Train the classifier using a pre-trained model with fine-tuned parameters.
-- **Validation Module:** Validate the trained model to assess its performance and accuracy.
-- **Testing Module:** Test the model on unseen images and measure its classification accuracy.
-- **Prediction Module:** Predict the top flower categories for a given image.
-- **Config-Driven Architecture:** Configurable hyperparameters like learning rate, batch size, and number of epochs
-  via `config.yaml`.
-- **Modular Design:** Organized into reusable modules and packages for scalability.
+---
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
