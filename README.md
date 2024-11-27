@@ -26,6 +26,7 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#main-features">Main Features</a></li>
+    <li><a href="#installation-steps">Installation Steps</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#udacity-certificate">Udacity Certificate</a></li>
@@ -69,6 +70,65 @@ The application is configurable via a `config.yaml` file, which simplifies hyper
 - **Modular Design:** Organized into reusable modules and packages for scalability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Installation Steps
+
+Follow these steps to set up your environment and install the necessary packages:
+
+1. **Create a Conda Environment**  
+   To isolate the project dependencies, create a Conda environment using Python 3.10:  
+   `conda create --name pytorch python=3.10`
+
+   Confirm the installation of required packages when prompted. The environment will be created at a location like `C:\Users\Mohamed\anaconda3\envs\pytorch`.
+
+2. **Activate the Conda Environment**  
+   Activate the newly created environment to ensure all commands are executed within it:  
+   `conda activate pytorch`
+
+3. **Install Essential Python Packages**  
+   Install the following Python packages for visualization, computation, and integration with Jupyter:  
+   `conda install ipykernel notebook matplotlib numpy pillow pyyaml`
+
+4. **Register the Kernel with Jupyter**  
+   To use the `pytorch` environment in Jupyter notebooks, register it as a kernel:  
+   `python -m ipykernel install --user --name=pytorch`
+
+   You can verify the installation by listing all available Jupyter kernels:  
+   `jupyter kernelspec list`
+
+5. **Verify CUDA Installation**  
+   Check if the NVIDIA CUDA toolkit is installed and accessible. This ensures PyTorch can leverage GPU acceleration:  
+   `nvcc --version`
+
+   The output should show a version like:
+
+   ```
+   nvcc: NVIDIA (R) Cuda compiler driver
+   Copyright (c) 2005-2024 NVIDIA Corporation
+   Built on Thu_Sep_12_02:55:00_Pacific_Daylight_Time_2024
+   Cuda compilation tools, release 12.6, V12.6.77
+   Build cuda_12.6.r12.6/compiler.34841621_0
+   ```
+
+6. **Install PyTorch with CUDA Support**  
+   Install PyTorch and its related libraries (`torchvision` and `torchaudio`) with CUDA support for GPU acceleration:  
+   `conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvidia`
+   
+   or
+   
+   `pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124  `
+
+7. **Verify PyTorch Installation**  
+   Run the following Python commands to confirm the installation:
+   - `import torch`
+   - `print(torch.__version__)`  # Should print the PyTorch version
+   - `print(torch.cuda.is_available())`  # Should return True if GPU is available
+   - `print(torch.version.cuda)`  # Should print the CUDA version being used by PyTorch
+   - `print(torch.backends.cudnn.enabled)`  # Should return True if cuDNN is enabled
+
+8. **Ready to Use**  
+   Once all steps are completed, the environment is ready for training and running your deep learning models.
+
 
 ## Built With
 
